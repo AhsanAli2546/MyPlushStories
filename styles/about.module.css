@@ -1,0 +1,23 @@
+
+.bg-about-color{
+    top:60px;
+    background: #dac8c8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.bg-robot{
+    background-size: 80% 100%;
+    background-image: url('../public/images/Group3.png');
+    background-repeat: no-repeat;
+}
+
+.robot-text{
+    margin-top: 20px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+}

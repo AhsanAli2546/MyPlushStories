@@ -1,0 +1,48 @@
+.header{
+    background: #dac8c8;
+    height: 650px;
+    padding-top: 50px;
+}
+
+
+.title{
+    margin-top: 120px;
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+.button{
+    border-radius: 15px;
+    height: 50px;
+    padding: 10px;
+}
+
+.idea-button{
+    background-color: transparent;
+    border: 3px solid white;
+    
+}
+
+
+.idea-button:hover{
+    background-color: white;
+    
+}
+
+
+.write-button{
+    background-color: white;
+    outline: none;
+    border: none;
+
+}
+
+
+.write-button:hover{
+    border: 3px solid white;
+    background-color: transparent;
+    
+}
+
