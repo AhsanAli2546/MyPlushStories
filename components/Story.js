@@ -17,8 +17,8 @@ export default function Story() {
   const handleSubmit = async (type) => {
 
     try {
-
-      if (type == null || type == '' || type == undefined) {
+      //console.log(title);
+      if (title == null || title == '' || title == undefined) {
         alert("some thing went wrong...!");
         return;
       }
@@ -33,18 +33,18 @@ export default function Story() {
       let data = await res.json();
       
       //console.log(data.story);
-      if(res.status == 400){
-        setIsLoading(false);
-        alert('some thing went wrong')
-        return;
-      }
+      // if(res.status == 400){
+      //   setIsLoading(false);
+      //   alert('some thing went wrong')
+      //   return;
+      // }
       setIsLoading(false);
       setStory(data.story);
       setStoryTextCounter(story.length)
 
     } catch (ex) {
       setIsLoading(false);
-      console.log("Error:", ex);
+      //console.log("Error:", ex);
     }
   }
 
@@ -102,7 +102,7 @@ export default function Story() {
                   <textarea type="text" className={`form-control ${styles['story-textarea']}`} value={story}
                     readOnly={true} maxLength={1000}>
                   </textarea>
-                  <div class="d-flex justify-content-center">
+                  <div className="d-flex justify-content-center">
                     <div className={`${isLoading ? 'spinner-border' : ''} position-absolute top-50`} role="status">
                       <span className="visually-hidden">Loading...</span>
                     </div>

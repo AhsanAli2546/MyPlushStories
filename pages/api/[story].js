@@ -24,7 +24,7 @@ export default async function handler(req, res) {
              presence_penalty:0
         });
 
-        // console.log(result);
+        console.log(result);
     
         let response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
     
