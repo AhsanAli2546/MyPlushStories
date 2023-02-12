@@ -29,7 +29,7 @@ export default function Story() {
       //console.log(withTypeTitle);
       setIsLoading(true);
       
-      let res = await fetch('/api/story/' + withTypeTitle);
+      let res = await fetch('https://api.my-plush-stories.vercel.app/api/story/' + withTypeTitle);
       let data = await res.json();
       
       //console.log(data.story);
