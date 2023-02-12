@@ -17,21 +17,21 @@ import { Configuration, OpenAIApi } from "openai";
         //res.status(200).json({ story: title });
         let response = "";
     
-        // let result = await openai.createCompletion({
-        //      model:'text-davinci-003',
-        //      prompt:title,
-        //      temperature:0.2,
-        //      max_tokens:365,
-        //      frequency_penalty:0.5,
-        //      presence_penalty:0
-        // });
+        let result = await openai.createCompletion({
+             model:'text-davinci-003',
+             prompt:title,
+             temperature:0.2,
+             max_tokens:365,
+             frequency_penalty:0.5,
+             presence_penalty:0
+        });
 
         // console.log(result);
     
-        //response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
+        response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
     
         // console.log(response);
-        res.status(200).json({ story: process.env.OPENAI_API_KEY });
+        res.status(200).json({ story: response });
 
         // //console.log(process.env.OPENAI_API_KEY);
     }catch(ex){
