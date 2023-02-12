@@ -1,19 +1,19 @@
 import { Configuration, OpenAIApi } from "openai";
 
-
-
   
   export default async function handler(req, res) {
     try{
       const configuration = new Configuration({
     
-        apiKey: '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'
+        apiKey: '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'
       });
       const openai = new OpenAIApi(configuration);
 
-        let title = req.query.story;
+      const { story } = req.query
+        //let title = req.query.story;
+        let title = story;
     
-        //console.log(title);
+        //console.log(story);
         //res.status(200).json({ story: title });
 
         let result = await openai.createCompletion({
@@ -35,8 +35,8 @@ import { Configuration, OpenAIApi } from "openai";
         // //console.log(process.env.OPENAI_API_KEY);
     }catch(ex){
         //console.log("Exception from api call: ",ex);
-        throw ex;
-        //res.status(400).json({Error:ex});
+        //throw ex;
+        res.status(400).json({Error:ex});
     }
     
     
