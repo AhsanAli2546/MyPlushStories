@@ -36,7 +36,7 @@ export default function Header() {
                     </div>
 
                     <div className={`col-lg-4`}>
-                    <Image src={`/images/Group5.png`} alt={`bear logo`}
+                    <Image src={`/images/group5.png`} alt={`bear logo`}
             width={650} height={400} className={`ml-0 d-block`} />
                         
                     </div>
