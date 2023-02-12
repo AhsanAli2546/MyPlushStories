@@ -15,19 +15,20 @@ import { Configuration, OpenAIApi } from "openai";
     
         //console.log(story);
         //res.status(200).json({ story: title });
-
+        let response = "";
+        //365
         let result = await openai.createCompletion({
              model:'text-davinci-003',
              prompt:title,
              temperature:0.2,
-             max_tokens:365,
+             max_tokens:15,
              frequency_penalty:0.5,
              presence_penalty:0
         });
 
         // console.log(result);
     
-        let response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
+        response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
     
         // console.log(response);
         res.status(200).json({ story: response });
