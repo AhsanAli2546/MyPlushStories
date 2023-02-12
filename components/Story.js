@@ -33,14 +33,18 @@ export default function Story() {
       let data = await res.json();
       
       //console.log(data.story);
-
+      if(res.status == 400){
+        setIsLoading(false);
+        alert('some thing went wrong')
+        return;
+      }
       setIsLoading(false);
       setStory(data.story);
       setStoryTextCounter(story.length)
 
     } catch (ex) {
       setIsLoading(false);
-      console.log("Error:", ex);
+      //console.log("Error:", ex);
     }
   }
 
