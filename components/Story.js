@@ -2,16 +2,8 @@ import { useState } from 'react';
 import Image from 'next/image'
 //import { Josefin_Sans } from '@next/font/google'
 import styles from '@/styles/Story.module.css'
-import { Configuration, OpenAIApi } from "openai";
+
 //const josefin_Sans = Josefin_Sans({ weight:"300", subsets: ['latin'] })
-
-
-const configuration = new Configuration({
-    
-  apiKey: process.env.OPENAI_API_KEY
-});
-
-const openai = new OpenAIApi(configuration);
 
 
 export default function Story() {
@@ -37,18 +29,8 @@ export default function Story() {
       //console.log(withTypeTitle);
       setIsLoading(true);
       
-      let result = await openai.createCompletion({
-        model:'text-davinci-003',
-        prompt:withTypeTitle,
-        temperature:0.2,
-        max_tokens:365,
-        frequency_penalty:0.5,
-        presence_penalty:0
-   });
-   //console.log(result);
-    
-   let response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
-      let data = response.json();
+      let res = await fetch('/api/story/' + withTypeTitle);
+      let data = await res.json();
       
       //console.log(data.story);
       // if(res.status == 400){
