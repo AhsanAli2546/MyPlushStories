@@ -26,7 +26,7 @@ export default function Story() {
       let withTypeTitle = title + " " + type;
       //alert(withTypeTitle);
 
-      console.log(withTypeTitle);
+      //console.log(withTypeTitle);
       setIsLoading(true);
       
       let res = await fetch('/api/' + withTypeTitle);
@@ -44,7 +44,7 @@ export default function Story() {
 
     } catch (ex) {
       setIsLoading(false);
-      //console.log("Error:", ex);
+      console.log("Error:", ex);
     }
   }
 
