@@ -5,7 +5,7 @@ import { Configuration, OpenAIApi } from "openai";
     try{
       const configuration = new Configuration({
     
-        apiKey: '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'
+        apiKey: process.env.OPENAI_API_KEY
       });
       const openai = new OpenAIApi(configuration);
 
@@ -16,22 +16,22 @@ import { Configuration, OpenAIApi } from "openai";
         //console.log(story);
         //res.status(200).json({ story: title });
         let response = "";
-        //365
-        let result = await openai.createCompletion({
-             model:'text-davinci-003',
-             prompt:title,
-             temperature:0.2,
-             max_tokens:15,
-             frequency_penalty:0.5,
-             presence_penalty:0
-        });
+    
+        // let result = await openai.createCompletion({
+        //      model:'text-davinci-003',
+        //      prompt:title,
+        //      temperature:0.2,
+        //      max_tokens:365,
+        //      frequency_penalty:0.5,
+        //      presence_penalty:0
+        // });
 
         // console.log(result);
     
-        response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
+        //response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
     
         // console.log(response);
-        res.status(200).json({ story: response });
+        res.status(200).json({ story: process.env.OPENAI_API_KEY });
 
         // //console.log(process.env.OPENAI_API_KEY);
     }catch(ex){
