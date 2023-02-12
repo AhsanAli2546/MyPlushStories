@@ -22,7 +22,7 @@ export default function About() {
               <div className='flex-fill '>
                 <p className={`text-center mt-5 h3`}> About MyPlush Stories AI</p>
                 <p className={`${styles['robot-text']}`}>
-                "Myplush Stories AI uses AI to create personalized, unique stories in various genres. Our platform combines creativity and innovation for a custom storytelling experience. Our mission is to bring your stories to life. Explore endless possibilities with Myplush Stories AI
+                &quot;Myplush Stories AI uses AI to create personalized, unique stories in various genres. Our platform combines creativity and innovation for a custom storytelling experience. Our mission is to bring your stories to life. Explore endless possibilities with Myplush Stories AI
                 </p>
               </div>
             </div>

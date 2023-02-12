@@ -85,7 +85,7 @@ export default function Story() {
                   </div>
                 </div>
                 <label className={`text-center mt-5`}>
-                  Whether you're looking for a gripping adventure, a heartwarming romance, or a thought-provoking sci-fi, our story generator has got you covered
+                  Whether you&apos;re looking for a gripping adventure, a heartwarming romance, or a thought-provoking sci-fi, our story generator has got you covered
                 </label>
                 {/* <button type="submit" class="btn btn-primary" >Submit</button> */}
               </div>

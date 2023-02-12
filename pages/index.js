@@ -56,7 +56,7 @@ export default function Home() {
                     Blend of creativity and innovation in story generation.
                   </li>
                   <li className='m-4'>
-                    Mission to bring everyone&apos;'s stories to life.
+                    Mission to bring everyone&apos;s stories to life.
                   </li>
                   <li className='m-4'>
                     Immersive experience with endless possibilities.
