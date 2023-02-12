@@ -15,21 +15,21 @@ export default async function handler(req, res) {
         //console.log(title);
         //res.status(200).json({ story: title });
 
-        let result = await openai.createCompletion({
-             model:'text-davinci-003',
-             prompt:title,
-             temperature:0.2,
-             max_tokens:365,
-             frequency_penalty:0.5,
-             presence_penalty:0
-        });
+        // let result = await openai.createCompletion({
+        //      model:'text-davinci-003',
+        //      prompt:title,
+        //      temperature:0.2,
+        //      max_tokens:365,
+        //      frequency_penalty:0.5,
+        //      presence_penalty:0
+        // });
 
-        console.log(result);
+        // console.log(result);
     
-        let response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
+        // let response = result.data.choices[0].text?.trim() || 'sorry there was a problem';
     
         // console.log(response);
-        res.status(200).json({ story: response });
+        res.status(200).json({ story: title });
 
         // //console.log(process.env.OPENAI_API_KEY);
     }catch(ex){
