@@ -1,14 +1,15 @@
 import { Configuration, OpenAIApi } from "openai";
 
-const configuration = new Configuration({
-    
-    apiKey: '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'
-  });
 
-  const openai = new OpenAIApi(configuration);
 
-export default async function handler(req, res) {
+  
+  export default async function handler(req, res) {
     try{
+      const configuration = new Configuration({
+    
+        apiKey: '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'
+      });
+      const openai = new OpenAIApi(configuration);
 
         let title = req.query.story;
     
