@@ -1,13 +1,18 @@
 .header{
-    background: #dac8c8;
-    height: 650px;
+    /* background-image: url('../public/images/Union.png'); */
+    /*height: 650px;*/
     padding-top: 50px;
+}
+
+.bg-header{
+    
+    background: #dac8c8;
 }
 
 
 .title{
     margin-top: 120px;
-    position: relative;
+    
     font-size: xx-large;
     font-weight: bold;
 }
@@ -17,6 +22,8 @@
     border-radius: 15px;
     height: 50px;
     padding: 10px;
+    width: 180px;
+    margin-top: 8px;
 }
 
 .idea-button{
@@ -45,4 +52,33 @@
     background-color: transparent;
     
 }
+
+
+.bg-container{
+    background: url('../public/images/bearh.png');
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    .title{
+       
+        font-size: xx-large;
+       
+    }
+    .write-button{
+        font-size: 16px;
+
+    
+    }
+
+    .header{
+      
+        /*height: 1050px;*/
+        
+    }
+  }
 

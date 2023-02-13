@@ -70,22 +70,22 @@ export default function Story() {
                 </div>
                 <div className={`row mt-4`}>
                   <div className={`col text-center`}>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => handleSubmit('original')}>Original</button>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => handleSubmit('Humor')}>Humor</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => handleSubmit('original')}>Original</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => handleSubmit('Humor')}>Humor</button>
                   </div>
                 </div>
                 <div className={`row mt-4`}>
                   <div className={`col text-center`}>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => { handleSubmit('Thriller') }}>Thriller</button>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => { handleSubmit('Romance') }}>Romance</button>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => { handleSubmit('realism') }}>realism</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => { handleSubmit('Thriller') }}>Thriller</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => { handleSubmit('Romance') }}>Romance</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => { handleSubmit('realism') }}>realism</button>
                   </div>
                 </div>
                 <div className={`row mt-4`}>
                   <div className={`col text-center`}>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => { handleSubmit('SciFi') }}>SciFi</button>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => { handleSubmit('Comedy') }}>comedy</button>
-                    <button className={`${styles['tag']} mx-2`} onClick={() => { handleSubmit('Adventures') }}>Adventures</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => { handleSubmit('SciFi') }}>SciFi</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => { handleSubmit('Comedy') }}>comedy</button>
+                    <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => { handleSubmit('Adventures') }}>Adventures</button>
                   </div>
                 </div>
                 <label className={`text-center mt-5`}>

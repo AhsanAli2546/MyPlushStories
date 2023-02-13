@@ -11,15 +11,15 @@ export default function About() {
       <section className={`${styles['bg-about-color']} pb-5 pt-1
         position-relative `} >
           <div className={`container p-3 justify-content-center`}>
-            <div className={`d-flex ${styles['bg-robot']} `}>
-              <div className='flex-fill'>
+            <div className={`row ${styles['bg-robot']} `}>
+              <div className='col'>
                 <Image src={`/images/Group2.png`} alt={'benefit of myplushstory'} 
-                  width={500}  height={500}  />
+                  width={500}  height={500} className={`w-100`} />
                 {/* <Image src={`/images/Group3.png`} alt={'benefit of myplushstory'} 
                   width={500}  height={500} className={`rounded-3 position-absolute ${styles['robot-shadow']} `} /> */}
               </div>
 
-              <div className='flex-fill '>
+              <div className='col '>
                 <p className={`text-center mt-5 h3`}> About MyPlush Stories AI</p>
                 <p className={`${styles['robot-text']}`}>
                 &quot;Myplush Stories AI uses AI to create personalized, unique stories in various genres. Our platform combines creativity and innovation for a custom storytelling experience. Our mission is to bring your stories to life. Explore endless possibilities with Myplush Stories AI

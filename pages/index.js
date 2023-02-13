@@ -29,6 +29,7 @@ export default function Home() {
       <Navbar/>
       <Header/>
       <main className={`${poppinsWs500.className} ${styles['body']}`} >
+        
         <EngageStories/>
         <About/>
         <Story/>
@@ -66,7 +67,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      <Footer/>
+      <Footer/> 
       </main>
     </>
   )
