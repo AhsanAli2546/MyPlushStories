@@ -35,13 +35,13 @@ export default function Home() {
         <Story/>
         <section className={` ${styles['bg-ben-sec']} pb-5 pt-1 position-relative top-0`} >
           <div className={`container p-3 justify-content-center`}>
-            <div className={`d-flex bg-white rounded-3 shadow`}>
-              <div className='flex-fill'>
+            <div className={`row bg-white rounded-3 shadow`}>
+              <div className='col-lg-3 col-md-3 col-sm-5 p-0'>
                 <Image src={`/images/benefit.png`} alt={'benefit of myplushstory'} 
-                  width={450}  height={500} className={'w-100 rounded-3'} />
+                  width={450}  height={500} className={'w-100 h-100 rounded-3'} />
               </div>
 
-              <div className='flex-fill'>
+              <div className='col-lg-9 col-md-9 col-sm-7'>
                 <p className={`text-center mt-5 ${poppinsWs600.className} h3`}> Benefit of using Myplush Stories AI</p>
                 <ol className={`mt-5 ${josefin_Sans500.className} h5`}>
                   <li className='m-4'>
