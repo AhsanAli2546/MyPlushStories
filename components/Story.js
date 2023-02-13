@@ -88,9 +88,9 @@ export default function Story() {
                     <button className={`${styles['tag']} mx-2 mt-1`} onClick={() => { handleSubmit('Adventures') }}>Adventures</button>
                   </div>
                 </div>
-                <label className={`text-center mt-5`}>
+                <p className={`text-center mt-5`}>
                   Whether you&apos;re looking for a gripping adventure, a heartwarming romance, or a thought-provoking sci-fi, our story generator has got you covered
-                </label>
+                </p>
                 {/* <button type="submit" class="btn btn-primary" >Submit</button> */}
               </div>
             </div>
