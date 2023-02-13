@@ -56,8 +56,7 @@ export default function Story() {
     <>
 
       <section className={`${styles['story-sec']} w-100 position-relative `}>
-        <div className={`container`}>
-          <div className={`row ${styles['story-row-sec']} p-2 rounded-2`}>
+          <div className={`row ${styles['story-row-sec']} rounded-2`}>
             <div className={`col-lg-4 col-md-4 col-sm-12 p-3 `}>
               <div className={`bg-white rounded-2 p-3 h-100`} >
                 <div className={`form-group`}>
@@ -94,7 +93,7 @@ export default function Story() {
                 {/* <button type="submit" class="btn btn-primary" >Submit</button> */}
               </div>
             </div>
-            <div className={`col-lg-12 p-3`}>
+            <div className={`col-lg-8 col-md-8 col-sm-12 p-3`}>
               <div className={`bg-white rounded-2 p-3`}>
                 <div className={`form-group`}>
 
@@ -120,7 +119,7 @@ export default function Story() {
               </div>
             </div>
           </div>
-        </div>
+        
 
       </section>
 
