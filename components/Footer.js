@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       
-      <footer className={`${styles['bg-footer-color']} mt-0`}>
+      <footer className={`${styles['bg-footer-color']} mt-0`} id="contact">
         <div className={`container`}>
         <div className={`row w-100 py-5`}>
             <div className={`col-lg-8`}>

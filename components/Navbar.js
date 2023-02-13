@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Poppins } from '@next/font/google'
 import styles from '@/styles/navbar.module.css'
 
@@ -21,16 +22,16 @@ export default function Nav() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className={`navbar-nav ms-auto mb-2 mb-lg-0 ${styles['text-dark-color']} `}>
         <li className="nav-item">
-        <a className="nav-link active lh-base" href="#">Home</a>
+        <Link href="#home" className="nav-link active lh-base">Home</Link>
         </li>
         <li className="nav-item">
-          <a className={`nav-link ${styles['text-dark-color']} lh-base`} href="#">About us</a>
+          <Link href="#about" className={`nav-link ${styles['text-dark-color']} lh-base`}>About us</Link>
         </li>
         <li className="nav-item">
-          <a className={`nav-link ${styles['text-dark-color']} lh-base`} href="#">MYplush AI</a>
+          <Link className={`nav-link ${styles['text-dark-color']} lh-base`} href="#myplush">MYplush AI</Link>
         </li>
         <li className="nav-item">
-          <a className={`nav-link ${styles['text-dark-color']} lh-base`} href="#">contact us</a>
+          <Link className={`nav-link ${styles['text-dark-color']} lh-base`} href="#contact">contact us</Link>
         </li>
         
         

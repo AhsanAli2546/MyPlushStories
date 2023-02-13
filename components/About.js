@@ -9,7 +9,7 @@ export default function About() {
     <>
       
       <section className={`${styles['bg-about-color']} pb-5 pt-1
-        position-relative `} >
+        position-relative `} id="about" >
           <div className={`container p-3 justify-content-center`}>
             <div className={`row ${styles['bg-robot']} `}>
               <div className='col'>

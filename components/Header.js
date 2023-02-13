@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       
-      <header className={` position-relative w-100 ${styles['bg-header']} ${styles['header']}`}>
+      <header className={` position-relative w-100 ${styles['bg-header']} ${styles['header']}`} id='home'>
         {/* <Image src={`/images/bearh.png`} alt={`bear logo`}
             width={580} height={450} className={`mx-auto pt-5 d-block`} /> */}
         <div className={`opacity-75 w-100 `}>

@@ -55,7 +55,7 @@ export default function Story() {
   return (
     <>
 
-      <section className={`${styles['story-sec']} w-100 position-relative `}>
+      <section className={`${styles['story-sec']} w-100 position-relative `} id='myplush'>
           <div className={`row ${styles['story-row-sec']} rounded-2`}>
             <div className={`col-lg-4 col-md-4 col-sm-12 p-3 `}>
               <div className={`bg-white rounded-2 p-3 h-100`} >
