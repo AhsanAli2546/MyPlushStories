@@ -10,9 +10,9 @@ export default function EngageStories() {
       
       <section className={`${styles['bg-engage-stories']} w-100`} >
         <p className={`${styles['engagestories-title']}`}>Create engaging Stories without stress with
-Myplush Stories AI </p>
-        <div className={`row w-100`}>
-            <div className={`col-lg-3 offset-1 p-3 text-center`}>
+            Myplush Stories AI </p>
+        <div className={`row w-100 justify-content-center`}>
+            <div className={`col-lg-3   p-3 text-center`}>
                 <div className={`container`}>
                     <div className={`card bg-white rounded-3`}>
                         <Image src={'/images/Lightbulb-amico1.png'} width={150} height={200} className={`w-100 ms-2`} alt={'lightbulb'} />
