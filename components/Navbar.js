@@ -9,7 +9,7 @@ export default function Nav() {
   return (
     <>
       
-      <nav className={`${styles['bg-nav-color']} navbar navbar-expand-lg px-5 ${poppins.className}`}>
+      <nav className={`${styles['bg-nav-color']} navbar navbar-expand-lg px-3 ${poppins.className}`}>
         <div className="container-fluid mx-5">
         <a className="navbar-brand" href="#">
             <Image src="/images/navlogo.png" alt="main logo"
