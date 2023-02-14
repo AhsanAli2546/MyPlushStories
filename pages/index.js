@@ -33,7 +33,7 @@ export default function Home() {
         <EngageStories/>
         <About/>
         <Story/>
-        <section className={` ${styles['bg-ben-sec']} p-3 pb-5 pt-1 position-relative top-0`} >
+        <section className={` ${styles['bg-ben-sec']} p-3 pb-5 pt-5 position-relative top-0`} >
           <div className={`container justify-content-center`}>
             <div className={`row bg-white rounded-3 shadow`}>
               <div className='col-lg-3 col-md-3 col-sm-5 p-0'>
