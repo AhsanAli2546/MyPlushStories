@@ -33,8 +33,8 @@ export default function Home() {
         <EngageStories/>
         <About/>
         <Story/>
-        <section className={` ${styles['bg-ben-sec']} pb-5 pt-1 position-relative top-0`} >
-          <div className={`container p-3 justify-content-center`}>
+        <section className={` ${styles['bg-ben-sec']} p-3 pb-5 pt-1 position-relative top-0`} >
+          <div className={`container justify-content-center`}>
             <div className={`row bg-white rounded-3 shadow`}>
               <div className='col-lg-3 col-md-3 col-sm-5 p-0'>
                 <Image src={`/images/benefit.png`} alt={'benefit of myplushstory'} 
